@@ -63,12 +63,33 @@ const constants = {
     PAYMENT_CHANNEL_URLS: [
       ''
     ]
+  },
+  dogeev: {
+    DATA_SUBFOLDER: 'dogeev',
+    MAGIC_BYTES: 0xc3c2c1c0,
+    GENESIS_BLOCK_HASH: '1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691',
+    PREVIOUS_HEADER: '9156352c1818b32e90c9e792efd6a11a82fe7956a630f03bbee236cedae3911a',
+    DNS_SEED: ['dnsseed.junkcoinexplorer.com', 'dogeevseed.s3na.xyz'],
+    DEFAULT_PORT: 42069,
+    NETWORK_BYTE: '1e',
+    SCRIPT_BYTE: '16',
+    PATH: '44\'/3\'/0\'/',
+    WALLET: {
+      wif: 0x9E,
+      bip32: {
+        public: 0x02FACAFD,
+        private: 0x02FAC398
+      }
+    },
+    PAYMENT_CHANNEL_URLS: [
+      ''
+    ]
   }
 }
 
 module.exports = {
   constants,
   KOINU: 100000000n,
-  PROTOCOL_VERSION: 70004,
+  PROTOCOL_VERSION: 70015,
   MIN_FEE: 1n
 }
