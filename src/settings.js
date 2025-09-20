@@ -14,6 +14,9 @@ function getSettings (network, dev) {
     case networks.TESTNET:
       settings = constants.testnet
       break
+    case networks.DOGEEV:
+      settings = constants.dogeev
+      break
     case networks.MAINNET:
       throw new MainnetNotSupported()
     default:
